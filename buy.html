@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beli Zumar Nova X</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="page-buy">
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="logo">Zumar<span class="logo-accent">.Pro</span></a>
+            <ul class="nav-links">
+                <li><a href="index1.html">Overview</a></li>
+                <li><a href="specs.html">Tech Specs</a></li>
+                <li><a href="buy.html" class="active">Buy</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="buy-wrapper">
+        <div class="product-preview-column">
+            <div class="sticky-image">
+                <img src="assets/laptop-front.png" id="preview-img" alt="Zumar Nova X">
+                <p class="preview-caption">Zumar Nova X dalam warna <span id="color-name">Titanium Black</span></p>
+            </div>
+        </div>
+
+        <div class="configuration-column">
+            <div class="config-header">
+                <h1 class="new-badge">New</h1>
+                <h2>Sesuaikan Zumar Nova X Anda.</h2>
+            </div>
+
+            <div class="config-section">
+                <h3>Pilih Chip</h3>
+                <div class="option-card selected" onclick="selectOption('chip', 0, 0)">
+                    <div class="opt-info">
+                        <span class="opt-title">M3 Pro</span>
+                        <span class="opt-desc">12-Core CPU, 18-Core GPU</span>
+                    </div>
+                    <div class="opt-price">+ Rp 0</div>
+                </div>
+                <div class="option-card" onclick="selectOption('chip', 1, 5000000)">
+                    <div class="opt-info">
+                        <span class="opt-title">M3 Max</span>
+                        <span class="opt-desc">16-Core CPU, 40-Core GPU</span>
+                    </div>
+                    <div class="opt-price">+ Rp 5.000.000</div>
+                </div>
+            </div>
+
+            <div class="config-section">
+                <h3>Pilih Unified Memory</h3>
+                <div class="option-grid">
+                    <button class="tile-btn selected" onclick="selectOption('ram', 0, 0)">18GB</button>
+                    <button class="tile-btn" onclick="selectOption('ram', 1, 3000000)">36GB</button>
+                    <button class="tile-btn" onclick="selectOption('ram', 2, 6000000)">96GB</button>
+                </div>
+            </div>
+
+            <div class="config-section">
+                <h3>Pilih Penyimpanan</h3>
+                <div class="option-card selected" onclick="selectOption('storage', 0, 0)">
+                    <span class="opt-title">512GB SSD</span>
+                    <span class="opt-price">Termasuk</span>
+                </div>
+                <div class="option-card" onclick="selectOption('storage', 1, 3000000)">
+                    <span class="opt-title">1TB SSD</span>
+                    <span class="opt-price">+ Rp 3.000.000</span>
+                </div>
+                <div class="option-card" onclick="selectOption('storage', 2, 9000000)">
+                    <span class="opt-title">2TB SSD</span>
+                    <span class="opt-price">+ Rp 9.000.000</span>
+                </div>
+            </div>
+
+            <div class="price-footer">
+                <div class="total-container">
+                    <span class="label">Total Estimasi</span>
+                    <span class="amount" id="total-price">Rp 35.000.000</span>
+                </div>
+                <button class="btn-primary full-width">Tambahkan ke Tas</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script1.js"></script>
+</body>
+</html>
