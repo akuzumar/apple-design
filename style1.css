@@ -15,7 +15,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
     /* 1. Paksa Navbar tetap di atas dan punya background */
     .navbar {
         background: #000 !important;
